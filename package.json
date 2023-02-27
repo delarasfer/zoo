@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start-server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/delarasfer/zoo/issues"
   },
-  "homepage": "https://github.com/delarasfer/zoo#readme"
+  "homepage": "https://github.com/delarasfer/zoo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
