@@ -1,7 +1,8 @@
 const Animal = require('./animal');
+const AnimalSound = require('./animalSound');
 
 module.exports = class Lion extends Animal {
     constructor() {
-      super('roar');
+      super(AnimalSound.LION);
     }
   }
