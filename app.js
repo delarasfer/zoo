@@ -10,8 +10,8 @@ console.log('----------Object Oriented----------');
   lion1.speak('I\'m a lion');
   tiger1.speak('Lions suck');
   console.log('------------Functional-------------');
-  const lion2 = new LionFunc(speakFunc);
+  const lion2 = new LionFunc();
   lion2.speak('I\'m a lion');
-  const tiger2 = new TigerFunc(speakFunc);
+  const tiger2 = new TigerFunc();
   tiger2.speak('Lions suck');
  

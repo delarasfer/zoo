@@ -1,8 +1,9 @@
+const inherits = require( 'inherits' );
 const AnimalFunc = require('./animalFunc');
 const AnimalSound = require('../animalSound');
 
-function LionFunc(speak) {
-    this.animal = new AnimalFunc(AnimalSound.LION, speak);
-    this.speak = (p) => this.animal.speak(p);
+inherits( LionFunc, AnimalFunc );
+function LionFunc() {
+    AnimalFunc.call( this, AnimalSound.LION );
   }
   module.exports = LionFunc;

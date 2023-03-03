@@ -1,6 +1,9 @@
-function animalFunc(sound, speak) {
+function animalFunc(sound) {
     this.sound = sound;
-    
-    this.speak = (p) => speak(p ,this.sound);
+  }
+  animalFunc.prototype.speak = function(phrase){
+    var arrPhrase  = phrase.split(" ");
+    const interleave = (arr, sou) => ([].concat(...arr.map(n => [n, sou]))).join(' ');
+    console.log(interleave(arrPhrase, this.sound));
   }
   module.exports = animalFunc;
